@@ -2,6 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
 
-module.exports = nextConfig
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'myimages.carlosgperez.com',
+        pathname: '/portfolio/**',
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;

@@ -1,9 +1,28 @@
+:root{
+  --max-width-component: 1200px;
+  --primary-color: #00050F;
+  --primary-color-light: #2c2f35;
+  --secondary-color: #0095FA;
+  --third-color: #F5F9FF;
+  --fourth-color: #DCA11D;
+  --color-start-ant: #C49952;
+  --color-start: rgba(196, 152, 82, 0.45);
+  --color-dark: #000000;
+
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--primary-color);
+  color: var(--third-color);
 }
 
 a {
@@ -15,6 +34,46 @@ a {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6{
+  color: var(--fourth-color);
+  margin: 0px;
+  text-align: center;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+ul {
+  margin: 0;
+}
+p, ul {
+  font-size: 1.4rem;
+}
+p {
+  margin: 0 0 1rem;
+}
+.blockInfo{
+  padding: 130px 0 0;
+}
+.titleProyect{
+  margin: 0 0 30px;
+}
+.spaceSection {
+  margin: 30px 0 0;
+}
+
+@media (max-width: 767px){
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.9rem;
+  }
+}
+/*
+Detectar y aplicar estilo dark si el navegador usa un modo oscuro
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -24,3 +83,4 @@ a {
     background: black;
   }
 }
+*/

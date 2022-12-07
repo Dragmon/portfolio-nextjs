@@ -1,0 +1,8 @@
+.projectSection{
+  padding: 120px 0 50px;
+}
+@media (max-width: 820px) {
+  .projectSection{
+    padding: 120px 0 90px;
+  }
+}

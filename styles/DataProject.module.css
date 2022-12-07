@@ -1,0 +1,36 @@
+.dataProject{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.contList{
+  margin: 0 0 20px;
+}
+.images{
+  width: 60%;
+}
+.images img{
+  width: 100%;
+  height: auto;
+}
+.info{
+  width: 40%;
+}
+.contLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 768px){
+  .dataProject, .contLinks{
+    flex-direction: column;
+  }
+  .contLinks{
+    gap: 20px;
+  }
+  .images, .info {
+    width: 100%;
+  }
+}

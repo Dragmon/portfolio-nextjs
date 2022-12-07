@@ -1,0 +1,40 @@
+.contCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 25px;
+  border: .2px solid var(--primary-color-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.contCard img {
+  border-radius: 20px;
+}
+
+.dataImage {
+  width: 60%;
+  height: auto;
+}
+
+.dataImage img{
+  width: 100%;
+  height: auto;
+}
+
+.introCard {
+  width: 40%;
+}
+
+@media (max-width: 767px){
+  .contCard {
+    flex-direction: column;
+  }
+  .dataImage, .introCard {
+    width: 100%;
+  }
+}

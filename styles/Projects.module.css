@@ -1,0 +1,17 @@
+.projectSection {
+  padding: 120px 0 90px 0;
+}
+.titleSection {
+  margin: 0 0 5% 0;
+}
+.contProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 0 10%;
+}
+.contProjects a{
+  width: 100%;
+}

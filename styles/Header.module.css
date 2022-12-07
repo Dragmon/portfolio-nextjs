@@ -1,0 +1,34 @@
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width-component);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(44 47 53 / 50%);
+  padding: 0 1%;
+  border-radius: 25px;
+}
+.logo{
+  width: 100px;
+  height: auto;
+}
+@media (max-width: 1300px) {
+  .header{
+    padding: 0 10%;
+  }
+  .logo{
+    width: 60px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .header{
+    padding: 0 5%;
+  }
+}

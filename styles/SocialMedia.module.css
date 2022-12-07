@@ -1,0 +1,13 @@
+.socialMedia{
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  width: 30px;
+  height: auto;
+}
+.icon:hover{
+  filter: invert(59%) sepia(95%) saturate(387%) hue-rotate(3deg) brightness(93%) contrast(92%);
+}

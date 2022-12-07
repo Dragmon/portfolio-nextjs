@@ -1,0 +1,21 @@
+.technologySection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titleSection{
+  margin: 0 0 5% 0;
+}
+.contTechnologies {
+  display: grid;
+  grid-auto-rows: 150px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+@media (max-width:767px) {
+  .technologySection{
+    padding: 120px 0 0;
+  }
+}
