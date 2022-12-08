@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <header className={style.header}>
-      <Link href="/">
+      <Link href="/" aria-label="link ir al home del sitio web">
         <Logo className={style.logo} />
       </Link>
       <SocialMedia />

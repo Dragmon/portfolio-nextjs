@@ -8,16 +8,23 @@ export default function SocialMedia() {
     <div className={style.socialMedia}>
       <a
         href="mailto: carlos.perez@charliegperez.com"
+        aria-label="link para enviar un email a carlos.perez@charliegperez.com"
         target="_blank"
         rel="noreferrer"
       >
         <IconEmail className={style.icon} />
       </a>
-      <a href="https://github.com/Dragmon" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/Dragmon"
+        aria-label="link para ir al repositorio de github"
+        target="_blank"
+        rel="noreferrer"
+      >
         <IconGithub className={style.icon} />
       </a>
       <a
         href="https://www.linkedin.com/in/charliegperez/"
+        aria-label="link para ir al perfil de linkedin"
         target="_blank"
         rel="noreferrer"
       >

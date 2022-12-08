@@ -13,3 +13,9 @@
 .myData p{
   font-size: 1.5rem;
 }
+
+@media (max-width: 767px){
+  .myData {
+    padding: 130px 0 0;
+  }
+}

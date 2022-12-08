@@ -13,6 +13,9 @@
   grid-gap: 2rem;
   justify-items: center;
 }
+.contTechnologies img {
+  object-fit: contain;
+}
 
 @media (max-width:767px) {
   .technologySection{
