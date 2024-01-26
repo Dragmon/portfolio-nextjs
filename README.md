@@ -12,6 +12,8 @@ Para correr de manera local se pueden utilizar las api's de technologies y proje
 const request = await fetch(`${process.env.URL_API}/api/technologies`);
 const request = await fetch(`${process.env.URL_API}/api/projects`);
 
+Version de Node requerida 16
+
 ### Ejecutar el proyecto en local
 
 ```bash
