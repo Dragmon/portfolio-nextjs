@@ -14,7 +14,8 @@ export default function Technologies({ items }) {
         {items.map((item) => (
           <DataImage
             key={item.id}
-            data={item}
+            src={item.url_images}
+            alt={item.description}
             widthImage={150}
             heightImage={150}
           />

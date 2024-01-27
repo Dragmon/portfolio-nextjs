@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-export default function DataImage(props) {
+export default function DataImage({ src, alt, widthImage, heightImage }) {
   return (
     <>
       <Image
-        src={props.data.url_images}
-        alt={props.data.description}
-        width={props.widthImage}
-        height={props.heightImage}
+        src={src}
+        alt={alt}
+        width={widthImage}
+        height={heightImage}
         layout="responsive"
         loading="lazy"
         //placeholder="blur"

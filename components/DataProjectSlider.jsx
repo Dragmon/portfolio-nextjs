@@ -25,7 +25,7 @@ export default function DataProjectSlider({ dataProject }) {
           </ul>
         </div>
         <div className={style.contLinks}>
-          <ButtonLink link={link} nameLink={'Web'} />
+          {link !== null ? <ButtonLink link={link} nameLink={'Web'} /> : null}
           {repository.length > 0 ? (
             <ButtonLink link={repository} nameLink={'Repositorio'} />
           ) : null}

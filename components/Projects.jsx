@@ -8,9 +8,11 @@ export default function Projects({ projects }) {
         <h2>Proyectos</h2>
       </div>
       <div className={style.contProjects}>
-        {projects.map((project) => (
-          <Card key={project.id} data={project} />
-        ))}
+        {projects.map((project) =>
+          project.active === true ? (
+            <Card key={project.id} data={project} />
+          ) : null
+        )}
       </div>
     </section>
   );

@@ -24,13 +24,27 @@ export default function Card({ data }) {
           <DataImage
             className={style.imagesCard}
             key={data.id}
-            data={data}
+            src={data.url_images}
+            alt={data.description}
             widthImage={550}
             heightImage={250}
           />
         </div>
         <div className={style.introCard}>
           <h3>{data.name_project}</h3>
+          <div className={style.technologies}>
+            {data.technologies.map((item) =>
+              item.url_images ? (
+                <DataImage
+                  key={item.id}
+                  src={item.url_images}
+                  alt={`icono de ${item.name}`}
+                  widthImage={75}
+                  heightImage={75}
+                />
+              ) : null
+            )}
+          </div>
         </div>
       </motion.div>
     </Link>

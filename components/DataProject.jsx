@@ -6,7 +6,7 @@ import ButtonLink from './ButtonLink';
 export default function DataProject({ dataProject }) {
   const { description, project_images, link, repository, technologies } =
     dataProject;
-  const { name_images, ...data } = project_images[0];
+  const { name_images, url_images, ...data } = project_images[0];
   data.description = `Imagen del sitio ${name_images}`;
 
   const arrayTextFilter = arrayText(description);
@@ -14,7 +14,12 @@ export default function DataProject({ dataProject }) {
   return (
     <div className={style.dataProject}>
       <div className={style.images}>
-        <DataImage data={data} widthImage={1200} heightImage={2600} />
+        <DataImage
+          src={url_images}
+          alt={`Imagen prinicipal del proyecto ${name_images}`}
+          widthImage={1200}
+          heightImage={2600}
+        />
       </div>
       <div className={style.info}>
         {arrayTextFilter.map((item, index) => (
