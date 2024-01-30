@@ -42,15 +42,6 @@ export default function Menu() {
               </li>
               <li>
                 <Link
-                  href="/#technologySection"
-                  aria-label="link para ir a la sección de tecnologías"
-                  scroll={false}
-                >
-                  <IconTools fill="#00050F" />
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/#projectSection"
                   aria-label="link para ir a la sección de los proyectos"
                   scroll={false}
