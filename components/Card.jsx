@@ -40,7 +40,7 @@ export default function Card({ data }) {
                   src={item.url_images}
                   alt={`icono de ${item.name}`}
                   widthImage={75}
-                  heightImage={75}
+                  heightImage={82}
                 />
               ) : null
             )}

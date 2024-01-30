@@ -39,12 +39,15 @@
   padding: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .contCard {
     flex-direction: column;
   }
   .dataImage,
   .introCard {
     width: 100%;
+  }
+  .introCard {
+    padding: 1% 0 0;
   }
 }

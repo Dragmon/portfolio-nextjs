@@ -11,8 +11,11 @@ export default function MyData() {
         <p>
           +6 años de experiencia en el desarrollo Frontend, algunas de las
           tecnologías que manejo son <b>JavaScript</b>, <b>ReactJS</b>, HTML,
-          CSS, WordPress, entre otras. Me he desempeñado en el rubro bancario
-          como en el de marketing digital.
+          CSS, WordPress, entre otras.
+        </p>
+        <p>
+          Me he desempeñado en el rubro bancario como en el de marketing
+          digital.
         </p>
         <p>
           Soy autodidacta, busco adaptarme rápidamente a los cambios y dispuesto
