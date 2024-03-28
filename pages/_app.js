@@ -6,10 +6,15 @@ import Layout from '../components/Layout';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
+const tagManagerArgs = {
+  gtmId: 'GTM-5KQBWJV',
+};
+
 function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
-    TagManager.initialize({ gtmId: `${process.env.GTM_ID}` });
+    TagManager.initialize(tagManagerArgs);
   }, []);
+
   return (
     <Layout>
       <main className={nunito.className}>

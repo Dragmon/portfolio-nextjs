@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import style from '../styles/Menu.module.css';
 import IconHome from './Icons/IconHome';
-import IconTools from './Icons/Icontools';
+import IconBlog from './Icons/IconBlog';
 import IconPortfolio from './Icons/IconPortfolio';
 import IconReturn from './Icons/IconReturn';
 import { useEffect, useState } from 'react';
@@ -47,6 +47,16 @@ export default function Menu() {
                   scroll={false}
                 >
                   <IconPortfolio fill="#00050F" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://blog.charliegperez.com/"
+                  aria-label="link para ir al blog"
+                  scroll={false}
+                  target="_blank"
+                >
+                  <IconBlog fill="#00050F" />
                 </Link>
               </li>
             </ul>
